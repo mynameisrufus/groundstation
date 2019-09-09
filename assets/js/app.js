@@ -18,5 +18,16 @@ import "phoenix_html"
 
 import LiveSocket from "phoenix_live_view"
 
-let liveSocket = new LiveSocket("/live")
+const Hooks = {}
+
+Hooks.Map = {
+  mounted(){
+    console.log(this.el)
+  },
+  updated() {
+    console.log(this.el)
+  }
+}
+
+let liveSocket = new LiveSocket("/live", {hooks: Hooks})
 liveSocket.connect()

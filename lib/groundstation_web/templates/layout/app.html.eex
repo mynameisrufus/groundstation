@@ -20,7 +20,7 @@
       <div class="left">
         <nav role="navigation">
           <ul>
-            <li><%= link "Map/HUD", to: "/" %></li>
+            <li><%= link "Map/HUD", to: Routes.live_path(@conn, GroundStationWeb.MapLive) %></li>
             <li><%= link "System Status", to: "/system" %></li>
             <li><%= link "Compass", to: Routes.live_path(@conn, GroundStationWeb.CompassLive) %></li>
             <li><%= link "Artificial Horizon", to: Routes.live_path(@conn, GroundStationWeb.HorizonLive) %></li>

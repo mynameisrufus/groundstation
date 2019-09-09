@@ -17,7 +17,7 @@ defmodule GroundStationWeb.Router do
   scope "/", GroundStationWeb do
     pipe_through :browser
 
-    get "/", PageController, :index
+    live "/", MapLive
     live "/compass", CompassLive
     live "/horizon", HorizonLive
     live "/dial", DialLive

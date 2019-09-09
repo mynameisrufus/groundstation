@@ -2,7 +2,6 @@ use Mix.Config
 
 # Configure your database
 config :groundstation, GroundStation.Repo,
-  username: "postgres",
   password: "postgres",
   database: "groundstation_dev",
   hostname: "localhost",
